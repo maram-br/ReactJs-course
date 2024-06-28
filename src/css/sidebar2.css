@@ -1,0 +1,36 @@
+.prof{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.link{
+    text-decoration: none;
+    color: rgb(17, 219, 215);
+    font-weight:bold;
+    padding: 10px;
+    font-size: 15px;
+
+}
+.tit{
+    font-size: large;
+    text-align: left;
+}
+.flex{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-end;
+}
+button{
+    justify-content:center;
+    flex-grow: 1;
+    width: 300px;
+    height: 70%;
+    
+}

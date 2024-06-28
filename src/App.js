@@ -1,14 +1,19 @@
 import './App.css';
 import Dashboard from './componenets/dashboard';
-import Sidebar from './componenets/sidebar';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      
-      <Sidebar />
-      <Dashboard />
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+        </Routes>
     </div>
+    </Router>
+
   );
 }
 
