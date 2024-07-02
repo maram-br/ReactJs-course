@@ -1,0 +1,47 @@
+
+  .dashboard {
+    display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  background-color: #FAFAFA;
+  }
+  .sidebar {
+    border-right: 1px solid  rgba(220, 215, 215, 0.659);
+    width: 250px;
+height: 1080px;
+background-color: #FFF;
+  }
+  
+
+  
+  
+  .content {
+  
+    padding-top: 20px;
+  flex-grow: 1;
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+
+
+    }
+    .cont{
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+
+
+    }
+   .side{
+    width: 300px;
+   }
+    .contcomp{
+        padding:10px;
+        flex-grow: 2;
+        margin-right: 10px;
+
+    }
+    
+    
+ 

@@ -1,18 +1,20 @@
 import React from 'react';
-import Navbar from './navbar';
-import Sidebar from './sidebar';
-import '../css/dashboard.css' ;
+import Navbar from '../header/navbar';
+import Sidebar from '../sidebar/sidebar';
+import '../../styles/content/dashboard.css' ;
 import Content from './content';
-import Sidebar2 from './sidebar2';
+import Profilesection from '../profile/profilesection';
 function Dashboard() {
   return (
     <div className="dashboard">
+      <div className="sidebar">
         <Sidebar />
-        <div className="content">
+        </div>
+      <div className="content">
           <Navbar />
           <div className='cont'>
             <Content />
-            <Sidebar2 />
+            <Profilesection />
           
           </div>
         </div>

@@ -1,10 +1,11 @@
 import React from 'react';
-import '../css/sidebar2.css';
+import '../../styles/profile/profilesection.css';
 import Profile from './profile';
+import User from '../../assets/Ellipse 1 (1).png'
 function sidebar2() {
     const employee = 
         {
-          image: 'https://mdbootstrap.com/img/new/avatars/8.jpg',
+          image: User,
           name: 'John Doe',
           post: 'Software Engineer',
           date: '15 Jan - 20 Jan',

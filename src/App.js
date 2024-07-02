@@ -1,5 +1,5 @@
 import './App.css';
-import Dashboard from './componenets/dashboard';
+import Dashboard from './componenets/content/dashboard';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 

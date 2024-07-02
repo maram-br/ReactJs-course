@@ -1,13 +1,11 @@
 import React from 'react';
-import {Getbadgeclass} from '../helpers/getbadgeclass';
-import {Getstatusclass} from '../helpers/getstatusclass';
+import Status from '../../helpers/Status';
+import '../../styles/content/emptable.css'
+import LeaveType from '../../helpers/LeaveType';
 function emptable({data}) {
   return (
     <div>
-      <div className='head'>
-        <h3 className='title'>Last Leaves Request</h3>
-        <a className='a'>see more</a>
-        </div>
+      
 
                 <table class="table align-middle mb-0 bg-white">
                   <thead class="bg-light">
@@ -21,7 +19,7 @@ function emptable({data}) {
                 </thead>
           <tbody>
           {data.map((employee, index) => (
-            <tr key={index}>
+            <tr  key={index}>
               <td>
                 <div class="d-flex align-items-center">
                   <img
@@ -30,18 +28,20 @@ function emptable({data}) {
                       class="rounded-circle"
                       />
                   <div class="ms-3">
-                    <p class="fw-bold mb-1">{employee.name}</p>
-                    <p class="text-muted mb-0">{employee.post}</p>
+                    <p class="name">{employee.name}</p>
+                    <p class="post">{employee.post}</p>
                   </div>
                 </div>
               </td>
               <td>
-                <p class="fw-normal mb-1">{employee.date}</p>
+                <p class="date">{employee.date}</p>
               </td>
               <td>
-                <span className= {Getbadgeclass(employee.type)}>{ employee.type}</span>
+                <LeaveType type={employee.type}/>
               </td>
-              <td className= {Getstatusclass(employee.status)}>{employee.status}</td>
+              <td>
+                <Status status={employee.status} />
+                </td>
               
             </tr>
           ))}

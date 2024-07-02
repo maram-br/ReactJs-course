@@ -1,0 +1,105 @@
+.prof{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.link{
+    text-decoration: none;
+    color: #0AAFDF;
+    text-align: right;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+.tit{
+    font-size: large;
+    text-align: left;
+}
+.flex{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-end;
+}
+button{
+    justify-content:center;
+    flex-grow: 1;
+    width: 300px;
+    height: 70%;
+    
+}
+.ligne{
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+}
+.rounded{
+    width: 94px;
+height: 94px;
+}
+.pro{
+    text-align: center;
+    font-family: Poppins;
+    line-height: 21px;
+
+}
+.myname{
+    color: #000;
+text-align: center;
+font-size: 21px;
+font-weight: 500;
+}
+.mypost{
+    color: #808295;
+font-size: 17px;
+font-weight: 400;
+}
+.myleaves{
+    color: #000;
+font-family: Poppins;
+font-size: 16px;
+font-weight: 500;
+
+}
+.progressdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.element{
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: small;
+}
+.but{
+    width: 260px;
+height: 70px;
+
+}
+button{
+    border-radius: 9px !important;
+    border-color: transparent;
+
+}
+.newemp{
+    background: linear-gradient(264deg, #8AD5F7 18.08%, #2BA7DF 99.17%);
+
+}
+.newdep{
+    background: linear-gradient(264deg, #FFDB5E 33.57%, #F1C041 99.17%);
+
+}
+.leave{
+    background: linear-gradient(264deg, #3AE102 18.08%, #3CB414 99.17%);
+
+
+}
