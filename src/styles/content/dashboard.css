@@ -40,7 +40,20 @@ background-color: #FFF;
         padding:10px;
         flex-grow: 2;
         margin-right: 10px;
+      }
 
+      @media (max-width: 768px) {
+        .column {
+            width: 100%;
+        }
+    }
+    
+    /* For mobile phones */
+    @media (max-width: 480px) {
+        .container {
+            width: 100%;
+            padding: 0 10px;
+        }
     }
     
     

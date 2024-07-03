@@ -83,3 +83,11 @@ margin: 7px;}
 
 
 }
+.setting{
+  display: flex;
+  flex-direction: row;
+}
+.dropdown{
+  margin-top: 20px;
+
+}

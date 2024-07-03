@@ -1,0 +1,56 @@
+.bar{
+    display: flex;
+    flex-direction: row;
+}
+.bouton{
+    margin-left: 455px;
+}
+.button{
+    color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 15px;
+font-weight: 500;
+width: 215px;
+height: 45px;
+border-radius: 8px;
+background: #3CB414;
+}
+.empcontent{
+    margin-top: 50px;
+}
+.cadre{
+    width: 105px;
+    height: 30px;
+    border-radius: 7px;
+    background: #E6FBDF;
+    text-align: center;
+font-family: Poppins;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+border-radius: 7px;
+padding-top: 5px;
+}
+.Full-Time{
+    color: #3CB414;
+background: #E6FBDF;
+}
+.Part-Time{
+    color: #0AAFDF;
+    background: #DCF5FE;}
+.btnedit{
+    width: 140px;
+height: 44px;
+border-radius: 8px;
+border: 1.5px solid var(--Stoke, #EBEBEB);
+background: #FFF;
+}
+Table{
+    margin-top: 50px;
+}
+.general{
+    margin-bottom: 0;
+}
+

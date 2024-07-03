@@ -5,14 +5,31 @@ import logo from '../../assets/Logo.png'
 import Home from '../../assets/icons/Home.png'
 import Case from '../../assets/icons/case.png'
 import Settings from '../../assets/icons/Settings.png'
-import User from '../../assets/icons/User.png'
+import User from '../../assets/icons/User2.png'
 import Fire from '../../assets/icons/Fire.png'
 import Logout from '../../assets/icons/Logout.png'
+import  Dropdown  from '../header/dropdownmenu';
 
 
 
 
 function Sidebar() {
+  const menu=[
+    {
+      name: 'Department',
+      ref: '#'
+    },
+    {
+      name: 'Holidays',
+      ref:'#'
+    },
+    {name: 'Leave Settings',
+      ref:'#'
+    },
+    {name: 'Permissions',
+      ref:'#'
+    }
+  ]
   return (
     <div className="sidebar">
         <img  className='logo' src={logo} alt='logo' />      
@@ -20,12 +37,12 @@ function Sidebar() {
         <li>
           <NavLink
             exact
-            to=""
+            to="/"
             className={({ isActive }) => (isActive ? 'active' : '')}
           >
             {({ isActive }) => (
             <div className={`nav-link-content ${isActive ? 'active' : ''}`}>
-              <img className='iconsidebar' src={Home} alt='home' />
+              <img className={`iconsidebar ${isActive ? 'active' : ''} `} src={Home} alt='home' />
               Dashboard
             </div>
             )}
@@ -73,7 +90,7 @@ function Sidebar() {
             )}
           </NavLink>
         </li>
-        <li>
+        <li className='setting'>
           <NavLink
             exact
             to="/settings"
@@ -82,10 +99,13 @@ function Sidebar() {
             {({ isActive }) => (
             <div className={`nav-link-content ${isActive ? 'active' : ''}`}>
               <img className='iconsidebar' src={Settings} alt='Settings' />
-              Settings
+              Settings 
             </div>
             )}
+
           </NavLink>
+          <Dropdown className='dropdown' menu={menu} />
+
         </li>
       </ul>
       <div className='logout'>

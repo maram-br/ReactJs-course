@@ -3,19 +3,30 @@ import '../../styles/content/navbar.css';
 import Notification from '../../assets/icons/Notification.png'
 import Emp from '../../assets/Employee.png'
 import Dropdown from './dropdownmenu';
-function Navbar() {
+function Navbar({title}) {
+  const menu=[
+    {name: 'Settings',
+      ref:'#'
+    },
+    {name: 'My Space',
+      ref:'#'
+    },
+    {name: 'My Leaves',
+      ref:'#'
+    }
+  ]
   return (
     <header>
     <div className="nav">
         <div className='title'>
-            Dashboard 
+            {title}
         </div>
         <div className="icon">
         <img  style={{width: '30px', height: '30px' }} src={Notification} />
         </div>
         <div className="menu-wrapper">
         <img src={Emp} style={{width: '40px', height: '40px'}} />
-        <Dropdown />        
+        <Dropdown menu={menu}/>        
         </div>
         
         

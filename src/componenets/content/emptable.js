@@ -1,55 +1,51 @@
 import React from 'react';
+import Table from '../../helpers/table';
 import Status from '../../helpers/Status';
-import '../../styles/content/emptable.css'
 import LeaveType from '../../helpers/LeaveType';
-function emptable({data}) {
+
+
+const columns = [
+  {
+    header: 'Name',
+    field: 'name',
+    render: (value, row) => (
+      <div className="d-flex align-items-center">
+        <img
+          src={row.image}
+          alt=""
+          className="rounded-circle"
+          style={{ width: '40px', height: '40px' }}
+        />
+        <div className="ms-3">
+          <p className="name">{value}</p>
+          <p className="post">{row.post}</p>
+        </div>
+      </div>
+    )
+  },
+  {
+    header: 'From-To',
+    field: 'date',
+    render: (value) => <p className="date">{value}</p>
+  },
+  {
+    header: 'Type',
+    field: 'type',
+    render: (value) => <LeaveType type={value} />
+  },
+  {
+    header: 'Status',
+    field: 'status',
+    render: (value) => <Status status={value} />
+  }
+];
+
+function Emptable({data}) {
   return (
     <div>
-      
-
-                <table class="table align-middle mb-0 bg-white">
-                  <thead class="bg-light">
-                  <tr>
-                    <th>Name</th>
-                    <th>From-To</th>
-                    <th>Type</th>
-                    <th>Status</th>
-
-                  </tr>
-                </thead>
-          <tbody>
-          {data.map((employee, index) => (
-            <tr  key={index}>
-              <td>
-                <div class="d-flex align-items-center">
-                  <img
-                      src={employee.image}
-                      alt=""
-                      class="rounded-circle"
-                      />
-                  <div class="ms-3">
-                    <p class="name">{employee.name}</p>
-                    <p class="post">{employee.post}</p>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <p class="date">{employee.date}</p>
-              </td>
-              <td>
-                <LeaveType type={employee.type}/>
-              </td>
-              <td>
-                <Status status={employee.status} />
-                </td>
-              
-            </tr>
-          ))}
-          </tbody>
-        </table>
-
-      </div>
+      <Table columns={columns} data={data} />
+    </div>
   );
 }
 
-export default emptable;
+export default Emptable ;
