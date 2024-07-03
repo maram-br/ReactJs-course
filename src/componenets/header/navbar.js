@@ -6,13 +6,13 @@ import Dropdown from './dropdownmenu';
 function Navbar({title}) {
   const menu=[
     {name: 'Settings',
-      ref:'#'
+      ref:'/settings'
     },
     {name: 'My Space',
-      ref:'#'
+      ref:'/myspace'
     },
     {name: 'My Leaves',
-      ref:'#'
+      ref:'/myleaves'
     }
   ]
   return (

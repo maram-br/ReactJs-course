@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Caret from '../../assets/icons/Caretdown.png'
 import '../../styles/content/dropdown.css';
-
+import { NavLink } from 'react-router-dom';
 function Dropdown({menu}) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -15,8 +15,20 @@ function Dropdown({menu}) {
       <img src={Caret} alt="Caret Icon" className="caret-icon" onClick={toggleDropdown} />
       <div className={` dropdown-content ${isOpen ? 'show' : ''} `}>
       {menu.map((men, menIndex) => (
-        <a key={menIndex} href={men.ref}>{men.name}</a>
-      ))}
+
+          <NavLink
+            exact
+            to={men.ref}
+            className={({ isActive }) => (isActive ? 'active' : '')}
+          >
+            {({ isActive }) => (
+            <div className={`dropdownlink nav-link-content ${isActive ? 'active' : ''} `}>
+              {men.name}           
+            </div>
+            )}
+          </NavLink>
+      
+          ))}
       </div>
     </div>
   );

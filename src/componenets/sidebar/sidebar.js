@@ -17,17 +17,17 @@ function Sidebar() {
   const menu=[
     {
       name: 'Department',
-      ref: '#'
+      ref: '/department'
     },
     {
       name: 'Holidays',
-      ref:'#'
+      ref:'/holidays'
     },
     {name: 'Leave Settings',
-      ref:'#'
+      ref:'/leavesettings'
     },
     {name: 'Permissions',
-      ref:'#'
+      ref:'/permissions'
     }
   ]
   return (
