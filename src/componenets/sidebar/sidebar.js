@@ -16,8 +16,8 @@ import  Dropdown  from '../header/dropdownmenu';
 function Sidebar() {
   const menu=[
     {
-      name: 'Department',
-      ref: '/department'
+      name: 'Departments',
+      ref: '/Departments'
     },
     {
       name: 'Holidays',

@@ -19,7 +19,7 @@ function Search() {
         </div>
         <input
           type="text"
-          placeholder="Search for an employee by ID"
+          placeholder="Search by ID"
           value={query}
           onChange={handleSearchChange}
           className="input"

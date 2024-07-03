@@ -22,10 +22,10 @@ function Navbar({title}) {
             {title}
         </div>
         <div className="icon">
-        <img  style={{width: '30px', height: '30px' }} src={Notification} />
+        <img  style={{width: '30px', height: '30px' }} alt= 'notification'src={Notification} />
         </div>
         <div className="menu-wrapper">
-        <img src={Emp} style={{width: '40px', height: '40px'}} />
+        <img src={Emp} alt='employee' style={{width: '40px', height: '40px'}} />
         <Dropdown menu={menu}/>        
         </div>
         
