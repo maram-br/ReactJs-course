@@ -15,7 +15,7 @@ function LeaveType({ type }) {
       break;
     case 'Personal Leave':
       icon = PersonalIcon;
-      className = 'icon personal';
+      className = 'icon personall';
       break;
     case 'Casual Leave':
       icon = CasualIcon;
