@@ -54,3 +54,7 @@ Table{
     margin-bottom: 0;
 }
 
+.link{
+    text-decoration: none ;
+    color: white;
+}

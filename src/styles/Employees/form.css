@@ -1,0 +1,212 @@
+/* InputComponent.css */
+.form-group {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  justify-content: space-between;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--Description-Color, #9B9EAD);
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .form-group select {
+    width: 220px;
+    height: 25px;
+    padding: 2px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    border: 1px solid var(--Stoke, #EBEBEB);
+    color: #000;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    }
+  .form-group input {
+    width: 220px;
+    height: 25px;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 7px;
+border: 1px solid var(--Stoke, #EBEBEB);
+  }
+.formcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 10px 10px 10px;
+
+}  
+.formcontent{
+    margin: 10px;
+}
+.personal{
+    width: 550px;
+    height: 300px;
+    border-radius: 19px;
+    border: 1px solid #EBEBEB;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+.semiformtitle{
+    color: #0AAFDF;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.below{
+    height: 230px;
+
+}
+
+.form-group.input2 input {
+    width: 150px;
+    height: 25px;
+    margin-left: 10px;
+
+  }
+.form-group.input2 label{
+    flex-grow: 2;
+    color: #000;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 500;
+    }
+
+    .generallabel{
+        color: var(--Description-Color, #9B9EAD);
+        font-family: Poppins;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: -0.26px;
+        margin-bottom: 0;
+        padding-right: 15px;
+    }
+    .form-group.input2{
+        margin-bottom: 10px;
+    }
+    .leavehistory{
+    margin-top: 70px;
+    margin-left: 50px;   
+    color: #4D4D4D;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500; }
+
+ /* FileInputComponent.css */
+.file-input-component {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .form-group {
+    display: flex;
+    align-items: center;
+  }
+  .inputfile{
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-right: 10px;
+  }
+  .filedescription{
+    color: #4D4D4D;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-bottom: 0;
+  }
+  
+  .file-name {
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 20px;
+    color: #8E8E8E;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+  }
+.uploadbuttons{
+    display:flex ;
+    flex-direction: row;
+    margin-top: 5px;
+    
+}  
+.plusicon{
+    background-color: #DBDBDB;
+    border-radius: 30px;
+    margin-left: 20px;
+    width: 50px;
+height: 50px;
+}
+.filebtn{
+    margin-left: 30px;
+    width: 120px;
+    height: 30px;
+    border-radius: 21px grey;
+    background: #FAFAFA;
+    color: #000;
+    text-align: right;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #EBEBEB;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.uploadbtn{
+    border-radius: 10px;
+background: #EAEAEA;
+width: 148px;
+height: 35px;
+color: var(--Label-Color, #808295);
+text-align: center;
+font-family: Poppins;
+font-size: 16px;
+font-weight: 500;
+margin-left: 20px;
+}
+.bton{
+    width: 110px;
+height: 35px;
+border-radius: 21px;
+
+}
+.buttons{
+    margin-left: 330px;
+    margin-top: 7px;
+}
+.cancelbtn{
+    color: #000;
+background-color: #FAFAFA;
+text-align: center;
+font-family: Poppins;
+font-size: 14px;
+font-weight: 500;
+border: 1px solid #EBEBEB;
+
+}
+.savebtn{
+    color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 14px;
+font-weight: 500;
+background-color: #0AAFDF;
+margin-left: 5px;
+}

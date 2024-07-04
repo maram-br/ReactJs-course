@@ -1,0 +1,52 @@
+/* Alert.css */
+.child {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.childcontainer {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 80%; 
+  max-width: 80%; 
+  height: 95%;
+}
+.iconemp{
+  width: 25px;
+  height: 25px;
+  margin-left: 340px;
+  margin-top: 5px;
+
+}
+
+
+.childhead{
+  display: flex;
+  flex-direction: row;
+background: #EBEBEB;
+border-radius: 8px 8px 0px 0px;
+padding: 5px;
+height: 50px;
+
+}
+.childtitle{
+  color: #000;
+  font-family: Poppins;
+  font-size: 17px;
+  font-weight: 500;
+  flex-grow: 2;
+  margin-left: 40px;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+

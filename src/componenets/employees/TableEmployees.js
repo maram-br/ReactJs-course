@@ -1,11 +1,13 @@
 import React from 'react';
 import Search from '../../helpers/Search';
-import '../../styles/Employees/employees.css'
-import Mail from '../../assets/icons/Envelope.png'
-import Phone from '../../assets/icons/Phone.png'
-import Table from '../../helpers/table'
+import '../../styles/Employees/employees.css';
+import Mail from '../../assets/icons/Envelope.png';
+import Phone from '../../assets/icons/Phone.png';
+import Table from '../../helpers/table';
 import Poststatus from './Poststatus';
-import Edit from '../../assets/icons/fi_edit-3.png'
+import Edit from '../../assets/icons/fi_edit-3.png';
+import Addemployee from './Addemployee';
+import { useState } from 'react';
 function TableEmployees({data}) {
    
     const columns = [
@@ -65,13 +67,23 @@ function TableEmployees({data}) {
             </div>)
           },
       ];
+      const [showinter, setShowinter] = useState(false);
+
+      const handleShowinter= () => {
+        setShowinter(true);
+      };
+    
+      const handleCloseinter = () => {
+        setShowinter(false);
+      };
   return (
     <div className='empcontent'>
         <p className='titre'>Employees List</p>
         <div className='bar'>
             <Search  />
             <div  className='bouton'>
-            <button className='button'>Add New Employee</button>
+            <button className='button'onClick={handleShowinter}>Add New Employee</button>
+            {showinter && <Addemployee onClose={handleCloseinter} />}
             </div>
         </div>
         <Table columns={columns} data={data} />
